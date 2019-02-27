@@ -17,7 +17,6 @@
 
 Players::Players( int Tir, int Punt , bool ply, string name): _numPuntos( Tir ), _numTiradas ( Punt ), _playing ( ply ),
                                                                                                   _name( name )
-
 {
                                                                            
 }
@@ -41,7 +40,7 @@ int Players::LanzarDado() {
  * @param puntos
  * @return 
  */
-int Players::setNumPuntos(int puntos) {
+void Players::setNumPuntos(int puntos) {
     
     this->_numPuntos = puntos;
 }
@@ -51,7 +50,7 @@ int Players::setNumPuntos(int puntos) {
  * @param tiradas
  * @return 
  */
-int Players::setNumTiradas(int tiradas) {
+void Players::setNumTiradas(int tiradas) {
     
     this->_numTiradas = tiradas;
 }
@@ -62,15 +61,15 @@ int Players::setNumTiradas(int tiradas) {
  * @param ply
  * @return 
  */
-int Players::setPlaying(bool ply) {
+void Players::setPlaying(bool ply) {
 
     this->_playing = ply;
 }
-int Players::setName(string name) {
+
+void Players::setName(string name) {
     this->_name = name;
 }
-
-
+ 
 bool Players::getPlaying() {
     return this->_playing;
 }

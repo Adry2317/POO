@@ -33,15 +33,15 @@ public:
     int LanzarDado (); //Function that calculate a random number between 1 to 6.
     
     
-     setNumTiradas ( int tiradas );
-     setNumPuntos( int puntos );
-     setPlaying ( bool ply );
-     setName ( string name );
+    void setNumTiradas ( int tiradas );
+    void setNumPuntos( int puntos );
+    void setPlaying ( bool ply );
+    void setName ( string name );
      
-      int getNumeroTiradas ();
-     int getPuntos ( );
-     bool getPlaying ( );
-     string getName ( );
+    int getNumeroTiradas ();
+    int getPuntos ( );
+    bool getPlaying ( );
+    string getName ( );
 };
 
 #endif /* PLAYERS_H */
