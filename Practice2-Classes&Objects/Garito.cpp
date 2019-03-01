@@ -8,7 +8,7 @@
  * File:   Garito.cpp
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  * 
- * Created on 24 de febrero de 2019, 19:13
+ * Created on 1 de marzo de 2019, 12:23
  */
 
 #include "Garito.h"
@@ -26,7 +26,7 @@ Garito::~Garito() {
 
 
 void Garito::setName(string name){
-    if ( name = " "){
+    if ( name == " "){
         throw string ( "Error:  Name is empty " );
     }
     else{
@@ -35,7 +35,7 @@ void Garito::setName(string name){
 }
 
 void Garito::setAdress(string adress){
-    if ( adress = " " ){
+    if ( adress == " " ){
         throw string ( "Error:  adress is empty" );
     }
     else{
@@ -43,3 +43,4 @@ void Garito::setAdress(string adress){
     }
     
 }
+

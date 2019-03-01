@@ -8,7 +8,7 @@
  * File:   Date.h
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  *
- * Created on 24 de febrero de 2019, 20:15
+ * Created on 1 de marzo de 2019, 12:17
  */
 
 #ifndef DATE_H
@@ -30,13 +30,13 @@ public:
     virtual ~Date();
     
     
-    void  int setDay ( Day );
+    void   setDay ( int Day );
     int gettDay ();
     
-    void int setMonth ( Month );
+    void  setMonth ( int Month );
     int gettMonth();
     
-    void int setYear ( Year );
+    void  setYear ( int Year );
     int getYear();
     
     
@@ -45,4 +45,5 @@ public:
 };
 
 #endif /* DATE_H */
+
 

@@ -51,43 +51,44 @@ int main(int argc, char** argv) {
    
      
     
-    /**Recorremos Vplayer en el peor de los casos 21 veces o hasta que todos
-     los jugadores tenga una puntuacion mayor o igual a 21*/
+/** We travel Vplayer in the worst case 21 times or until all
+      players have a score greater than or equal to 21 */
     
      for ( int i = 0; i< 21|| keepPlaying; i++ ){
         keepPlaying = false;
         
-        /**Recorremos el vector de jugadores*/
+        /** We go through the vector of players */
         for ( int j = 0; j<Nplayer; j++ ){
             
-            //Si todabia puede segur jugando...
+            //If you can still continue playing ...
             if (vPlayers[j].getPlaying() == true ){
-                //Lanzamos el dado
+                //we throw the dice
                 int tirada =vPlayers[j].LanzarDado();
-                //Sumamos la puntuacion del dado a los puntos de jugador
+                //we add the puntuation of the dice to the player
                 vPlayers[j].setNumPuntos(tirada+ vPlayers[j].getPuntos());
-                //Incrementamos en 1 el numero de tiradas
+                //We increased the number of runs by 1
                 vPlayers[j].setNumTiradas(vPlayers[j].getNumeroTiradas() + 1 );
                 
-                //Y comprovamos si con esta ultima tirada ha obtenido 21 o mas
+                // check if with this last run you have obtained 21 or more
                 if( vPlayers[j].getPuntos() >= 21 ){
                     
-                    //Si es asi, decimos que este jugador no puede seguir jugando
+                    //If so, we say that this player can not continue playing
                     vPlayers[j].setPlaying( false );
                     
-                    //Sumamos el estado de este jugador al estado del juego general
+                    //We add the status of this player to the general game state
                     keepPlaying += vPlayers[j].getPlaying();
                 }     
             }            
         }
     }
-    //Creamos un vector en memoria dinamica de Ganadores
+    //We create a vector in Winners dynamic memory
     Players *vWinner = new Players [Nplayer];
      
     int contador = 0;
      
-    /**Mostrar nombre, puntos y tiradas de cada jugador y añadir a vWinner
-    a los que hayan optenido 21 puntos*/
+    /**Show name, points and runs of each player and add to vWinner
+     to those who have opted 21 points*/
+    
     for ( int i = 0; i<Nplayer; i++){
         
         cout<<endl;
@@ -100,7 +101,7 @@ int main(int argc, char** argv) {
             vWinner[contador]=vPlayers[i];
         }
     }
-    /**Recorremos vWinner en busca del jugador con menos tiradas*/
+    /**We travel vWinner in search of the player with fewer runs*/
     int max=-999;
     int aux = 0;
     for ( int p=0; p<contador; p++){

@@ -13,7 +13,9 @@
 
 #include "Players.h"
 #include<stdlib.h>
-
+#include <ctime>
+#include <cmath>
+#include <cstdlib>
 
 Players::Players( int Tir, int Punt , bool ply, string name): _numPuntos( Tir ), _numTiradas ( Punt ), _playing ( ply ),
                                                                                                   _name( name )
@@ -31,7 +33,8 @@ Players::~Players() {
 int Players::LanzarDado() {
     int point;
     
-    point = ( 1 + rand() % 6 );    //Numeros aleatorios 1-6
+    srand (time(NULL));
+    point = ( 1 + rand() % 6 );    //random number 1-6;
     
     return point;
 }

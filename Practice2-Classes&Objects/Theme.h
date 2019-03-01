@@ -8,30 +8,30 @@
  * File:   Theme.h
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  *
- * Created on 24 de febrero de 2019, 18:38
+ * Created on 1 de marzo de 2019, 12:00
  */
 
 #ifndef THEME_H
 #define THEME_H
+#include <iostream>
+using namespace std;
 
 class Theme {
-private:
+    private:
     string _title;
     string _performer;
     int _duration;
     int _score;
-
-
+    
 public:
-    Theme();
+    Theme() ;
     
-    Theme( string _T = " ", string _Per = " ", int _D = 0, int_S = 0 ); //Constructor con parametros por defecto.      
-    
+    Theme( string tile, string _performer, int duration, int score= 0 );
     
     Theme(const Theme& orig);
     virtual ~Theme();
-
-    void setTitle( string titulo );
+    
+     void setTitle( string titulo );
     string gettTitle();
     
     void setPerformer ( string interprete );
@@ -39,6 +39,7 @@ public:
 
     void SetDuration ( int duracion );
     int gettDuration ();
+
 };
 
 #endif /* THEME_H */

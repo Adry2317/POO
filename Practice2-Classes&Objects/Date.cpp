@@ -8,7 +8,7 @@
  * File:   Date.cpp
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  * 
- * Created on 24 de febrero de 2019, 20:15
+ * Created on 1 de marzo de 2019, 12:17
  */
 
 #include "Date.h"
@@ -42,16 +42,16 @@ Date::Date(int day, int month, int year){
 }
 
 
-void Date::setDay(Day){
+void Date::setDay(int Day){
     this-> _day = Day;
     
 }
 
-void Date::setMonth(Month){
+void Date::setMonth(int Month){
     this->_month = Month;
     
 }
 
-void Date::setYear(Year){
+void Date::setYear(int Year){
     this->_year = Year;
 }

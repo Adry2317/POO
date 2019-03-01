@@ -8,7 +8,7 @@
  * File:   Theme.cpp
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  * 
- * Created on 24 de febrero de 2019, 18:38
+ * Created on 1 de marzo de 2019, 12:00
  */
 
 #include "Theme.h"
@@ -16,14 +16,14 @@
 Theme::Theme() {
 }
 
-Theme::Theme( string _T, string_Per, int _D, int _S  ) : _title(_T), _performer(_Per),
-                                                                                                _duration(_D),  _score(_S)
+Theme::Theme( string title, string performer, int duration, int score  ) : _title(title), _performer(performer),
+                                                                                                _duration( duration ),  _score(score)
 {
     
 }
 
-Theme::Theme(const Theme& orig): title(orig._title), performer(orig._performer), duration(orig._duration),
-                                                                score(orig._score)
+Theme::Theme(const Theme& orig): _title(orig._title), _performer(orig._performer), _duration(orig._duration),
+                                                                _score(orig._score)
 {
     
 }
@@ -47,3 +47,4 @@ void Theme::setPerformer(string interprete){
     this->_performer = interprete;
     
 }
+

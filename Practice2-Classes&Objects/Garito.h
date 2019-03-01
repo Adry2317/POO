@@ -8,12 +8,14 @@
  * File:   Garito.h
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  *
- * Created on 24 de febrero de 2019, 19:13
+ * Created on 1 de marzo de 2019, 12:23
  */
 
 #ifndef GARITO_H
 #define GARITO_H
-
+#include <iostream>
+using namespace std;
+        
 class Garito {
 
 private:
@@ -35,4 +37,3 @@ public:
 };
 
 #endif /* GARITO_H */
-
