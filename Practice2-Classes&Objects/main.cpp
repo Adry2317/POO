@@ -8,7 +8,7 @@
  * File:   main.cpp
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  *
- * Created on 24 de febrero de 2019, 18:38
+ * Created on 1 de marzo de 2019, 11:59
  */
 
 #include <cstdlib>
@@ -25,8 +25,8 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     //Objet to theme's class.
-    Theme t1;
-    Theme t2( Manifiesto, Nach, 660, 10 );
+    Theme temazo1;
+    Theme temazo2( "Manifiesto", "Nach", 660, 10 );
     
     //Objet to garito's class.
     Garito g1;
@@ -37,16 +37,17 @@ int main(int argc, char** argv) {
     Date f2 ( 23,01,2017 );
     
     //Showing data of the classes.
-    ShowTemazo ( t1 ); //defult/
-    ShowTemazo ( t2 );//Parameterized.
+        ShowTemazo ( temazo1 ); //defult/
+        ShowTemazo ( temazo2 );//Parameterized.
     
-    ShowGarito ( g1 );//default
-    ShowGarito ( g2 );//Copy.
+        ShowGarito ( g1 );//default
+        ShowGarito ( g2 );//Copy.
             
-    ShowFecha ( f1 );//defautl.
-    ShowFecha ( f2 );//parameterized.
+        ShowFecha ( f1 );//defautl.
+        ShowFecha ( f2 );//parameterized.
     
-    
+   
     return 0;
 }
+
 

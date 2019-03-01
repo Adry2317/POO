@@ -5,44 +5,46 @@
  */
 
 #include "Module.h"
-#include "Garito.h"
-#include "Date.h"
 #include <iostream>
+using namespace std;
 
-functions::ShowTemazo(Theme t1){
+void ShowTemazo( Theme temazo){
     
-    std::cout<<"Title: "<<t1.gettTitle()<<endl;
-    std::cout<<"Performer: "<<t1.gettPerformer()<<endl;
-    std::cout<<"Length: "<<t1.gettDuration()<<endl;
+    cout<<"Title: "<<temazo.gettTitle()<<endl;
+    cout<<"Performer: "<<temazo.gettPerformer()<<endl;
+    cout<<"Length: "<<temazo.gettDuration()<<endl;
     
     
 }
 
-functions::ShowGarito(Garito g1){
+void ShowGarito( Garito g1){
     
-    std::cout<<"Name:  "<<g1.gettName()<<endl;
-    std::cout<<"Adress: "<<g1.gettAdress()<<endl;
+    cout<<"Name:  "<<g1.gettName()<<endl;
+    cout<<"Adress: "<<g1.gettAdress()<<endl;
     
    
 }
 
-functions::ShowFecha(Date f1){
+void ShowFecha( Date f1){
     
-    std::cout<<"Day: "<<f1.gettDay();
-    std::cout<<"Month: "<<f1.gettMonth();
-    std::cout<<"Year: "<<f1.getYear();
+    cout<<"Day: "<<f1.gettDay();
+    cout<<"Month: "<<f1.gettMonth();
+    cout<<"Year: "<<f1.getYear();
     
 }
     
-functions::DataGarito(Garito& G2){
-    cout<<"introduce the name of the garito: "<<enld;
-       
+void DataGarito(Garito &G2){
+    cout<<"introduce the name of the garito: "<<endl;
+    string name;
+    cin>>name;
     
+    G2.setName(name);
     
     cout<<"Introduce the adress of the garito: "<<endl;
     string adress;
     cin>>adress;
     
+    G2.setAdress(adress);
             
     
     

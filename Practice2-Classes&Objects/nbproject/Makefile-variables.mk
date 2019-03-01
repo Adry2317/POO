@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=dice_game
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/dice_game
+CND_ARTIFACT_NAME_Debug=practice2-classes_objects
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/practice2-classes_objects
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=dicegame.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/dicegame.tar
+CND_PACKAGE_NAME_Debug=practice2-classes&objects.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/practice2-classes&objects.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=dice_game
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/dice_game
+CND_ARTIFACT_NAME_Release=practice2-classes_objects
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/practice2-classes_objects
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=dicegame.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/dicegame.tar
+CND_PACKAGE_NAME_Release=practice2-classes&objects.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/practice2-classes&objects.tar
 #
 # include compiler specific variables
 #

@@ -8,7 +8,7 @@
  * File:   Module.h
  * Author: Sammy Guergachi <sguergachi at gmail.com>
  *
- * Created on 25 de febrero de 2019, 9:12
+ * Created on 1 de marzo de 2019, 12:38
  */
 
 #ifndef MODULE_H
@@ -18,23 +18,19 @@
 #include "Garito.h"
 
 
-using namespace std;
 
-namespace functions{
     
-     void ShowTemazo ( Theme t1);
+    
+     void ShowTemazo ( Theme temazo);
     
      void ShowGarito ( Garito g1 );
      
      void  ShowFecha ( Date f1 );
      
-     void DataGarito ( Garito &G2 );
+     void DataGarito (  Garito &G2 );
     
     
     
-}
-
-
 
 
 #endif /* MODULE_H */
