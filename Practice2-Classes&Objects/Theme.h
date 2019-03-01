@@ -31,7 +31,8 @@ public:
     Theme(const Theme& orig);
     virtual ~Theme();
     
-     void setTitle( string titulo );
+    
+    void setTitle( string titulo );
     string gettTitle();
     
     void setPerformer ( string interprete );
@@ -39,6 +40,8 @@ public:
 
     void SetDuration ( int duracion );
     int gettDuration ();
+    
+    int getScore();
 
 };
 

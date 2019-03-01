@@ -36,7 +36,7 @@ Date::Date(const Date& orig) {
 Date::~Date() {
 }
 
-Date::Date(int day, int month, int year){
+Date::Date(int day, int month, int year):_day(day),_month(month),_year(year){
     
     
 }
@@ -54,4 +54,16 @@ void Date::setMonth(int Month){
 
 void Date::setYear(int Year){
     this->_year = Year;
+}
+
+int Date::getYear(){
+    return _year;
+}
+
+int Date::gettMonth(){
+    return _month;
+}
+
+int Date::gettDay(){
+    return _day;
 }

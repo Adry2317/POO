@@ -18,9 +18,9 @@ class Date {
 
 private:
     
-    int _day=0;
-    int _month=0;
-    int _year=0;
+    int _day;
+    int _month;
+    int _year;
 
 public:
     Date();
@@ -30,7 +30,7 @@ public:
     virtual ~Date();
     
     
-    void   setDay ( int Day );
+    void setDay ( int Day );
     int gettDay ();
     
     void  setMonth ( int Month );

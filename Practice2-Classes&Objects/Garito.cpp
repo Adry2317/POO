@@ -44,3 +44,10 @@ void Garito::setAdress(string adress){
     
 }
 
+string Garito::gettName(){
+    return _name;
+}
+
+string Garito::gettAdress(){
+    return _adress;
+}

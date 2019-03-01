@@ -48,3 +48,20 @@ void Theme::setPerformer(string interprete){
     
 }
 
+
+
+string Theme::gettTitle(){
+    return _title;
+}
+
+string Theme::gettPerformer(){
+    return _performer;
+}
+
+int Theme::gettDuration(){
+    return _duration;
+}
+
+int Theme::getScore(){
+    return _score;
+}
