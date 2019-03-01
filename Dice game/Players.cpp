@@ -22,6 +22,7 @@ Players::Players( int Tir, int Punt , bool ply, string name): _numPuntos( Tir ),
 }
 
 Players::Players(const Players& orig) {
+    
 }
 
 Players::~Players() {

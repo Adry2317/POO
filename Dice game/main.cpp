@@ -24,7 +24,7 @@ using namespace std;
 int main(int argc, char** argv) {
 
     int Nplayer = 0;
-    bool keepPlaying = true;
+    bool keepPlaying;
     
     
     cout<< "Introduce number of players: "<<endl;
