@@ -36,4 +36,7 @@ public:
     string gettAdress();
 };
 
+string getAdress ();
+string getName();
+
 #endif /* GARITO_H */

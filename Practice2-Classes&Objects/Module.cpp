@@ -13,40 +13,42 @@ void ShowTemazo( Theme temazo){
     cout<<"Title: "<<temazo.gettTitle()<<endl;
     cout<<"Performer: "<<temazo.gettPerformer()<<endl;
     cout<<"Length: "<<temazo.gettDuration()<<endl;
-    
+    cout<<"Score: "<<temazo.getScore()<<endl;
+     cout<<"/**************************************************/"<<endl;
     
 }
 
 void ShowGarito( Garito g1){
-    
+  
     cout<<"Name:  "<<g1.gettName()<<endl;
     cout<<"Adress: "<<g1.gettAdress()<<endl;
-    
+     cout<<"/**************************************************/"<<endl;
    
 }
 
 void ShowFecha( Date f1){
     
-    cout<<"Day: "<<f1.gettDay();
-    cout<<"Month: "<<f1.gettMonth();
-    cout<<"Year: "<<f1.getYear();
-    
+    cout<<"Day: "<<f1.gettDay()<<endl;
+    cout<<"Month: "<<f1.gettMonth()<<endl;
+    cout<<"Year: "<<f1.getYear()<<endl;
+     cout<<"/**************************************************/"<<endl;
 }
     
-void DataGarito(Garito &G2){
+void DataGarito(Garito &g1){
+    
     cout<<"introduce the name of the garito: "<<endl;
     string name;
     cin>>name;
     
-    G2.setName(name);
+    g1.setName(name);
     
     cout<<"Introduce the adress of the garito: "<<endl;
     string adress;
     cin>>adress;
     
-    G2.setAdress(adress);
+    g1.setAdress(adress);
             
-    
+     cout<<"/**************************************************/"<<endl; 
     
 }
     

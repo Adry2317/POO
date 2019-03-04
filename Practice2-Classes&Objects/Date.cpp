@@ -13,6 +13,8 @@
 
 #include "Date.h"
 #include <ctime>
+#include <iostream>
+using namespace std;
 
 
 Date::Date() {
@@ -36,7 +38,7 @@ Date::Date(const Date& orig) {
 Date::~Date() {
 }
 
-Date::Date(int day, int month, int year){
+Date::Date(int day, int month, int year): _day(day), _month(month),_year(year){
     
     
 }
@@ -54,4 +56,43 @@ void Date::setMonth(int Month){
 
 void Date::setYear(int Year){
     this->_year = Year;
+}
+
+int Date::gettDay(){
+    return ( this->_day );
+    
+}
+
+int Date::gettMonth() {
+    return ( this->_month );
+}
+
+int Date::getYear() {
+    return ( this->_year);
+    
+}
+
+int Date::operator-(const Date& anotherDate) {
+
+    int aux1=0, aux2=0;
+    int result = 0;
+    
+    aux1=this->_year*365;
+    aux1+=this->_month*30;
+    aux1+=this->_day;
+    
+    
+    aux2=anotherDate._year*365;
+    aux2+=anotherDate._month*30;
+    aux2+=anotherDate._day;
+    
+    result = aux1 - aux2;
+    
+    if( result < 0 ){
+        throw string ( "Worning: negative value." );
+    }
+    else{
+        return result;
+    }
+    
 }

@@ -27,7 +27,7 @@
      
      void  ShowFecha ( Date f1 );
      
-     void DataGarito (  Garito &G2 );
+     void DataGarito (  Garito &g1 );
     
     
     

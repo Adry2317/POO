@@ -24,6 +24,7 @@ using namespace std;
  * 
  */
 int main(int argc, char** argv) {
+    int option=0;
     //Objet to theme's class.
     Theme temazo1;
     Theme temazo2( "Manifiesto", "Nach", 660, 10 );
@@ -36,17 +37,49 @@ int main(int argc, char** argv) {
     Date f1;
     Date f2 ( 23,01,2017 );
     
-    //Showing data of the classes.
-        ShowTemazo ( temazo1 ); //defult/
-        ShowTemazo ( temazo2 );//Parameterized.
+  
     
-        ShowGarito ( g1 );//default
-        ShowGarito ( g2 );//Copy.
+    do{
+        
+          cout<<"1. Show the data of the Themazo."<<endl;
+    cout<<"2. Show the data of the Garitos."<<endl;
+    cout<<"3. Show the data of the Fechas. "<<endl;
+    cout<<"4. Modify the data of the second Garito."<<endl;
+    cout<<"5. End the application."<<endl;
+    
+    cin>>option;
+        
+        
+        
+    switch (option){
+        case 1: 
+               ShowTemazo ( temazo1 ); //defult/
+               ShowTemazo ( temazo2 );//Parameterized.
+               break;
+        
+        case 2:
+            ShowGarito ( g1 );//default
+       
+            ShowGarito ( g2 );//Copy.
+            break;
             
-        ShowFecha ( f1 );//defautl.
-        ShowFecha ( f2 );//parameterized.
+            
+        case 3:
+            ShowFecha ( f1 );//defautl.
+            ShowFecha ( f2 );//parameterized.
+            
+        case 4:
+            DataGarito( g2);
+    }
+    //Showing data of the classes.
     
-   
+    }while(option!=5);
+        
+             
+        
+    
+        
+      
     return 0;
 }
 

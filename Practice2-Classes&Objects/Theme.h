@@ -40,6 +40,8 @@ public:
     void SetDuration ( int duracion );
     int gettDuration ();
 
+    void setScore ( int score );
+    int getScore();
 };
 
 #endif /* THEME_H */

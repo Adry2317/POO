@@ -39,7 +39,7 @@ public:
     void  setYear ( int Year );
     int getYear();
     
-    
+    int operator- (const Date& anotherDate );
 
 
 };

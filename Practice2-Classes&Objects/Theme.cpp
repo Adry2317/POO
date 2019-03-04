@@ -13,7 +13,7 @@
 
 #include "Theme.h"
 
-Theme::Theme() {
+Theme::Theme():_title(""), _performer(""), _duration(0), _score(0) {
 }
 
 Theme::Theme( string title, string performer, int duration, int score  ) : _title(title), _performer(performer),
@@ -48,3 +48,23 @@ void Theme::setPerformer(string interprete){
     
 }
 
+void Theme::setScore(int score){
+    this->_score = score;
+}
+
+string Theme::gettTitle(){
+    return (this->_title );
+}
+
+int Theme::gettDuration() {
+  return ( this->_duration );
+}
+
+string Theme::gettPerformer() {
+   return (this->_performer);
+}
+
+int Theme::getScore(){
+    return (this->_score);
+    
+}
